@@ -30,7 +30,7 @@ $route = new Route(
     ]
 );
 $routes = new RouteCollection();
-$routes->add('hello', $route);
+$routes->add('api', $route);
 
 $request = Request::createFromGlobals();
 $context = new RequestContext();
