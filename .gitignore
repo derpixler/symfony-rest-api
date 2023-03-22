@@ -1,0 +1,6 @@
+.docker/home
+.docker/mysql
+vendor
+/logs/
+.DS_Store
+.idea
