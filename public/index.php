@@ -1,6 +1,6 @@
 <?php
 
-namespace DerPixler\SymfonyRestApi;
+namespace DerPixler\Symfony\RestApi;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -29,6 +29,8 @@ $route = new Route(
         'action' => ''
     ]
 );
+$route->setMethods(['POST']);
+
 $routes = new RouteCollection();
 $routes->add('api', $route);
 

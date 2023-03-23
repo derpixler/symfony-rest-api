@@ -1,5 +1,5 @@
 <?php
-namespace DerPixler\SymfonyRestApi\Controllers;
+namespace DerPixler\Symfony\RestApi\Controllers;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,7 +16,7 @@ class RestController
     )
     {
         $this->request = $request;
-        $this->client = $client;
+        $this->client = !empty($client) ? $client : 'John Doe';
 
         $action = !empty($action) ? $action : 'index';
 
