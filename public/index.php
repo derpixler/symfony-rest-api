@@ -4,7 +4,7 @@ namespace DerPixler\Symfony\RestApi;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use DerPixler\SymfonyRestApi\Controllers\RestController;
+use DerPixler\Symfony\RestApi\Controllers\RestController;
 use Exception;
 
 use Symfony\Component\
